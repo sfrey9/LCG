@@ -1,0 +1,8 @@
+def lcgseed(seedvalue):
+    global rand
+    rand = seedvalue
+    
+def lcg(a, c, m):
+    global rand
+    rand = (a*rand + c) % m
+    return rand
